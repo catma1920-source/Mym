@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ช่วยตอบคำถามอัตโนมัติ</title>
+  <style>
+    body {
+      background: #0d1117;
+      color: white;
+      font-family: Arial;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .faq-box {
+      background: #161b22;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+      color: white;
+      background: #238636;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    button:hover {
+      background: #2ea043;
+    }
+    
+    .answer {
+      display: none;
+      margin-top: 10px;
+      background: #0d4429;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <h1>ศูนย์รวมคำตอบ – ทั่วไป</h1>
+  
+  <div class="faq-box">
+    <button onclick="toggle('ans1')">🔨 วิธีทำถ้ำคราฟเบ็ด (Cave)</button>
+    <div class="answer" id="ans1">
+      หาคนมาให้ครบ4คน <br>
+      เข้าเชิฟให้ได้ <br>
+      บอกชื่อของแต่ละคนให้ส่งมาทาง discord : <a href="https://discord.gg/NAnuegXKgv">
+        https://discord.gg/NAnuegXKgv
+      </a>
+    </div>
+  </div>
+  
+  <div class="faq-box">
+    <button onclick="toggle('ans2')">🎣 วิธีแลกเปลี่ยนของ</button>
+    <div class="answer" id="ans2">
+      เข้าเกม <br>
+      ติดต่อช่องทาง<br>
+      discord : <a href="https://discord.gg/NAnuegXKgv">https://discord.gg/NAnuegXKgv</a> <br>
+      พิมพ์แชทเกมเมื่ออยู่ต่อหน้าเจ้าของไลฟ์ <br>
+      พิมพ์สิ่งที่ต้องการ
+    </div>
+  </div>
+  
+  <div class="faq-box">
+    <button onclick="toggle('ans3')">🧭 ต้องการให้ช่วยหาของ</button>
+    <div class="answer" id="ans3">
+      ให้ทำการเข้ามาทางdiscordนี้: <a href="https://discord.gg/NAnuegXKgv">
+        https://discord.gg/NAnuegXKgv
+      </a>
+    </div>
+  </div>
+  
+  <div class="faq-box">
+    <button onclick="toggle('ans4')">เชิฟเวอร์และกฏในการเข้าเชิฟ</button>
+    <div class="answer" id="ans4">
+      1.ทำถามที่เจ้าของไลฟ์ <br>
+      ถ้าไม่ทำตามจะโดนเตะออกจากเชิฟ <br>
+      <a href="https://ro.blox.com/Ebh5?pid=Server&is_retargeting=false&af_dp=roblox%3A%2F%2Fnavigation%2Fshare_links%3Fcode%3D6d4a1d2f25812a4b80ac161e46f5fcfa%26type%3DServer&deep_link_value=roblox%3A%2F%2Fnavigation%2Fshare_links%3Fcode%3D6d4a1d2f25812a4b80ac161e46f5fcfa%26type%3DServer&af_web_dp=https%3A%2F%2Fwww.roblox.com%2Fshare-links%3Fcode%3D6d4a1d2f25812a4b80ac161e46f5fcfa%26type%3DServer">
+        ลิ้งเชิฟ
+      </a>
+    </div>
+  </div>
+  
+  <script>
+    function toggle(id) {
+      let box = document.getElementById(id);
+      box.style.display = box.style.display === "block" ? "none" : "block";
+    }
+  </script>
+  
+</body>
+
+</html>
